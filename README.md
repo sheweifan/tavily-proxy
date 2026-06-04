@@ -116,6 +116,16 @@ curl -X DELETE https://your-worker.workers.dev/api/keys \
   -d '{"apiKey": "tvly-xxx"}'
 ```
 
+
+curl https://tavily-proxy.923986234.workers.dev/api/keys \
+  -H "x-api-key: sk_7fA9xQ2LmP8vR3nKcT6zWbH4YdJ1uE5G"
+
+
+curl -X POST https://tavily-proxy.923986234.workers.dev/api/keys \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: sk_7fA9xQ2LmP8vR3nKcT6zWbH4YdJ1uE5G" \
+  -d '{"apiKey": "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"}'
+  
 ## How the Key Pool Works
 
 1. When a tool is called, `KV.list()` retrieves all stored API keys
@@ -127,3 +137,27 @@ curl -X DELETE https://your-worker.workers.dev/api/keys \
 ## License
 
 ISC
+
+---
+
+# Key Update History
+
+## 2026-05-08
+
+**Old Keys (removed):**
+- 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
+- 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
+- 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
+- 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
+
+**New Keys (added):**
+- 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
+- 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
+- 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
+- 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
+
+卡号：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
+卡号：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
+卡号：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
+卡号：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
+卡号：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
